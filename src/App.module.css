@@ -1,0 +1,12 @@
+.wrapper {
+    max-width: 70rem; /* 1120px */
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr; /* o 1fr vai fazer e adaptar pra quanto couber na tela */
+    gap: 2rem;
+    align-items: flex-start;  /* sempre ficar alinhado para o topo */
+    /* o padrão n é alinhar é esticar para q fiquem do msm tamanho */
+
+}
