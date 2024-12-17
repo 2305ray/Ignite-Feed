@@ -10,3 +10,13 @@
     /* o padrão n é alinhar é esticar para q fiquem do msm tamanho */
 
 }
+
+@media (max-width: 768px) { /* quando a tela for menor que isso */
+    html {
+        font-size: 87,5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

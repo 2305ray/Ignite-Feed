@@ -1,6 +1,6 @@
 
 import { Header } from './components/Header';
-import { Post } from './components/Posts';
+import { Post, posts } from './components/Posts';
 
 import './global.css'
 import styles from './App.module.css';
@@ -17,17 +17,15 @@ function App() {
           <Sidebar />
 
           <main>
-            <Post 
-          author="Diego Fernandes"
-          content='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo laudantium officia ipsam magnam. Et excepturi, cum hic vel velit iste vitae animi
-          placeat autem voluptatem. Officia suscipit eos blanditiis libero?'
-        />
-
-        <Post 
-            author="Mayk"
-            content=' Quo laudantium officia ipsam magnam. Et excepturi, 
-            placeat autem voluptatem. Officia suscipit eos blanditiis libero?'
-        />
+            {posts.map(post => {
+              return (
+                <Post
+                  author={post.author}
+                  content={post.content}
+                  publisehdAt={post.publishedAt}
+                />
+              )
+            })}
           </main>
         </div>
     </div>

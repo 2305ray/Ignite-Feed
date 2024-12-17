@@ -12,8 +12,14 @@
     --gray-700: #29292e;
     --gray-800: #282824;
     --gray-900: #121214;
-    
+    --gray-comment: #313131;
 
+}
+
+:focus {
+    outline: transparent;
+    box-shadow:  0 0 0 2px var(--green-500);
+    border-radius: 8px;
 }
 
 * {

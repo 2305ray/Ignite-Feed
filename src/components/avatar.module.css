@@ -1,0 +1,14 @@
+.avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.avatarWithBorder {
+    /*box-sizing: initial;  faz com que quando coloque borda etc, ocupe um espaço a mais, sem comprimir os elementos*/
+    width: calc(3rem + 12px); /* + o tanto de borda 4 de um lado + 4 de outro + 2 e +2 de outline */
+    height: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--gray-800);
+    outline: 2px solid var(--green-500);
+}
