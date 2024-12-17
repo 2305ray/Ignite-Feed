@@ -1,6 +1,6 @@
 
 import { Header } from './components/Header';
-import { Post } from './components/Post';
+import { Post } from './components/Posts';
 
 import './global.css'
 import styles from './App.module.css';
