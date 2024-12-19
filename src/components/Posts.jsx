@@ -92,8 +92,26 @@ function handleCriateNewComment () {
 }
 
 function handleNewComment() {
+    event.target.setCustomValidity('')
     setNewCmommentText(event.target.value);
 }
+
+function handleNewCommentInvalid() {
+    //target -> qual é o elemento que aconteceu aquele evento
+    event.target.setCustomValidity('Esse campo é obrigatório'); // é um método que muda a mensagem de validação
+}
+
+function deleteComment(commentToDelete) {
+// imutabilidade -> as variáveis não sofrem mutação, é criado um novo valor, um novo espaço na memória
+//criar uma nova lista de comentários sem o comentario que quer deletar
+//o filter percorre cada comentario e se retornar true ele mantém na lista, false ele remove
+    const commentsWithoutDeletedOne = comments.filter(comment => {
+        return comment !== commentToDelete; //mater na lista os comentarios que forem diferentes do comentario q quer deletar
+    });
+    setComments(commentsWithoutDeletedOne);
+}
+
+const isNweCommentEmpty = newCommentText.length === 0
 
     return (
         <article className={styles.post}> 
@@ -131,17 +149,26 @@ function handleNewComment() {
                 name='comment'
                 placeholder='Deixe um comentário'
                 onChange={handleNewComment} 
+                onInvalid={handleNewCommentInvalid} //chamada sempre que o html identifica que tentamso realizar o submit só q o texto era invalido
+                required //valida o formulário
                 />
                 
 
                 <footer>
-                     <button type='submit'>Publicar</button> 
+                     <button type='submit' disabled={isNweCommentEmpty}>
+                        Publicar
+                     </button> 
                 </footer>      
             </form>
 
             <div className={styles.commentList} > 
                 {comments.map(comment => {
-                    return <Comment key={comment} content={comment}/>
+                    return (
+                    <Comment 
+                    key={comment} 
+                    content={comment} 
+                    onDeleteComment={deleteComment}
+                    />)
                 })}
                 
             </div>
