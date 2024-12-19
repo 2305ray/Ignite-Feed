@@ -111,7 +111,7 @@ function deleteComment(commentToDelete) {
     setComments(commentsWithoutDeletedOne);
 }
 
-const isNweCommentEmpty = newCommentText.length === 0
+const isNewCommentEmpty = newCommentText.length === 0
 
     return (
         <article className={styles.post}> 
@@ -155,7 +155,7 @@ const isNweCommentEmpty = newCommentText.length === 0
                 
 
                 <footer>
-                     <button type='submit' disabled={isNweCommentEmpty}>
+                     <button type='submit' disabled={isNewCommentEmpty}>
                         Publicar
                      </button> 
                 </footer>      
