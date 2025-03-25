@@ -37,13 +37,18 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - **JavaScript** – Linguagem de programação utilizada para a lógica da aplicação.
 - **Phosphor-react** – Biblioteca de ícones SVG flexível e altamente personalizável.
 - **ESLint** – Ferramenta para análise e padronização do código, garantindo boas práticas e melhor legibilidade.
-- **Date-fns** – Ferramenta para análise e padronização do código, garantindo boas práticas e melhor legibilidade.
-
+- **Date-fns** – Biblioteca para manipulação e formatação de datas de forma eficiente.  
 
 
   ---
 
 ## 💡 Projeto
+
+- 📌 **Comentar**: Os usuários podem adicionar comentários às postagens, tornando a interação mais dinâmica.  
+- ❌ **Excluir comentários**: Caso necessário, um usuário pode remover um comentário específico.  
+- ❤️ **Curtir postagens**: Os usuários podem curtir os posts, indicando engajamento com o conteúdo.  
+
+O layout foi desenvolvido com um design simples e responsivo, garantindo uma boa experiência de usuário. O projeto foi criado com foco no estudo de tecnologias como React, JavaScript e estilização com CSS.  
 
 É um projeto desenvolvido pela Rocketseat no curso ReactJS do Ignite
 
