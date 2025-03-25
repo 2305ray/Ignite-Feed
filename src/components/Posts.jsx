@@ -36,9 +36,9 @@ import { useState } from 'react';
     {
         id: 2,
         author: {
-            avatarUrl: 'https://github.com/maykbrito.png',
-            name: 'Mayk Brito',
-            role: 'Educator @Rocketseat'
+            avatarUrl: 'https://github.com/2305ray.png',
+            name: 'Rayssa garcia',
+            role: 'Web Developer'
         },
         content: [
             { type: 'paragraph', content: 'Fala galeraa 👋'},
