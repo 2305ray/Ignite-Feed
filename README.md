@@ -1,90 +1,32 @@
-<h1 align="center"> Ignite Feed </h1>
+[README.md](https://github.com/user-attachments/files/32347883/README.md)# Ignite Feed
 
-<p align="center">
- Interface de um feed de mídia social interativo, onde é possível comentar, excluir e curtir posts.
-</p>
+Feed de mídia social interativo onde é possível publicar posts, comentar, excluir comentários e aplaudir postagens. Projeto desenvolvido durante o curso ReactJS do Ignite, da Rocketseat.
 
+## 🚀 Tecnologias utilizadas
 
+- **React 18**
+- **Vite** – build tool e servidor de desenvolvimento
+- **CSS Modules** – estilização encapsulada por componente
+- **Phosphor React** – ícones
+- **date-fns** – formatação de datas (data completa e "há quanto tempo", em pt-BR)
+- **ESLint**
 
-<div align="center">
-  
-[![Tecnologias](https://img.shields.io/badge/Tecnologias-purple?style=for-the-badge)](#-tecnologias)
-[![Projeto](https://img.shields.io/badge/Projeto-blue?style=for-the-badge)](#-projeto)
-[![Layout](https://img.shields.io/badge/Layout-red?style=for-the-badge)](#-layout)
+## 📦 Como rodar o projeto
 
-</div>
+```bash
+# clone o repositório
+git clone https://github.com/2305ray/Ignite-Feed.git
+cd Ignite-Feed
 
+# instale as dependências
+npm install
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000" >
-</p>
+# rode em modo desenvolvimento
+npm run dev
+```
 
-<br>
+Outros scripts disponíveis: `npm run build`, `npm run lint` e `npm run preview`.
 
-<div align="center">
-  <img alt="feed" src="https://github.com/2305ray/Ignite-Feed/blob/main/src/assets/ignite-feed.png" width="100%">
-</div>
+## 📁 Estrutura
 
-   ---
-  
-## 🚀 Tecnologias
-
-O projeto foi desenvolvido utilizando as seguintes tecnologias:
-
-- **React.js** – Biblioteca para construção da interface do usuário.
-- **Vite** – Ferramenta de build rápida e otimizada para projetos React.
-- **CSS Module** – Módulos CSS para estilização encapsulada e modular.
-- **JavaScript** – Linguagem de programação utilizada para a lógica da aplicação.
-- **Phosphor-react** – Biblioteca de ícones SVG flexível e altamente personalizável.
-- **ESLint** – Ferramenta para análise e padronização do código, garantindo boas práticas e melhor legibilidade.
-- **Date-fns** – Biblioteca para manipulação e formatação de datas de forma eficiente.  
-
-
-  ---
-
-## 💡 Projeto
-
-- 📌 **Comentar**: Os usuários podem adicionar comentários às postagens, tornando a interação mais dinâmica.  
-- ❌ **Excluir comentários**: Caso necessário, um usuário pode remover um comentário específico.  
-- ❤️ **Curtir postagens**: Os usuários podem curtir os posts, indicando engajamento com o conteúdo.  
-
-O layout foi desenvolvido com um design simples e responsivo, garantindo uma boa experiência de usuário. O projeto foi criado com foco no estudo de tecnologias como React, JavaScript e estilização com CSS.  
-
-É um projeto desenvolvido pela Rocketseat no curso ReactJS do Ignite
-
-- [Rocketseat](https://www.rocketseat.com.br/)
-
-  ---
-
-## 🎨 Layout
-
-### 💻 **Versão mobile**
-<div align="center">
-  <img alt="todoList home" src="https://github.com/2305ray/Ignite-Feed/blob/main/src/assets/ignite-feed-mobile.png" width="40%">
-</div>
-
---- 
-
-## 🛠 Como rodar o projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/2305ray/Ignite-Feed.git
-   ```
-2. Acesse a pasta do projeto:
-   ```bash
-   cd Ignite-Feed
-   ```
-3. Instale as dependências:
-   ```bash
-   npm install
-   ```
-4. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-
----
-
-<p align="center"> Feito com ♥ Rocketseat </p>
-
+Os posts (autor, conteúdo e data) ficam como dados mockados em `src/components/Posts.jsx`, componente responsável também pela lógica de comentar e excluir comentários via `useState`. `Header`, `Sidebar`, `Avatar` e `Comment` são os demais componentes reutilizáveis em `src/components`.
